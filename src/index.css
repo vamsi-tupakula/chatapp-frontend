@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100vh;
+}
+
+.join__page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.join__form {
+  width: 300px;
+  height: 160px;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0 0 5px #8e8e8e;
+}
+
+.join__form input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid steelblue;
+  margin: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+.join__form input:focus {
+  border-bottom: 3px solid steelblue;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background: steelblue;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
