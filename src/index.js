@@ -6,7 +6,7 @@ import JoinPage from "./components/JoinPage";
 import Home from "./components/Home";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://chat-backend-drxn.onrender.com");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
