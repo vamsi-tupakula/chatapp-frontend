@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import '../App.css'
 
 function Home({ socket }) {
+    console.log(socket);
     const [msg, setMsg] = useState("");
     const [data, setData] = useState(null);
     const [currRoom, setCurrRoom] = useState("Vampires");
@@ -23,6 +24,7 @@ function Home({ socket }) {
 
     useEffect(() => {
         const getMessages = (data) => {
+            console.log(data);
             setData(data);
         };
         socket.on("display", getMessages);
